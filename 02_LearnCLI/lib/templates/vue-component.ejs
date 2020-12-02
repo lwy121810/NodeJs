@@ -1,0 +1,50 @@
+<!--
+ * @Author: lwy
+ * @Date: 2020-10-24 17:04:25
+ * @LastEditors: OBKoro1
+ * @LastEditTime: 2020-10-24 17:06:57
+ * @FilePath: /02_LearnCLI/lib/templates/vue-component.ejs
+-->
+
+<!-- ejs网站: https://ejs.bootcss.com -->
+
+<template>
+  <div class="<%= data.lowerName %>">
+    <h1>{{ msg }}</h1>
+  </div>
+</template>
+
+<script>
+export default {
+  name: '<%= data.name %>',
+  props: {
+    msg: String
+  },
+  components: {
+  },
+  mixins: [],
+  data: function() {
+    return {
+      message: "<%= data.name %>"
+    }
+  },
+  created: function() {
+
+  },
+  mounted: function() {
+
+  },
+  computed: {
+
+  },
+  methods: {
+
+  }
+}
+</script>
+
+<style scoped>
+  .<%= data.lowerName %> {
+    
+  }
+</style>
